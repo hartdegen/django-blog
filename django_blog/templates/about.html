@@ -1,2 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
 <h1>About</h1>
 <p>something</p>
+<p>{{ tags|join:', ' }}</p>
+{% endblock %}

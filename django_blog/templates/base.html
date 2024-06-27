@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}Title text{% endblock %}</title>
+</head>
+<body>
+<div id="sidebar">
+    {% block sidebar %}
+        <ul>
+            <li><a href="/">Main</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/articles/">Articles</a></li>
+        </ul>
+    {% endblock %}
+</div>
+<div id="content">
+    {% block content %}{% endblock %}
+</div>
+</body>
+</html>

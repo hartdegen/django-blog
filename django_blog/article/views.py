@@ -4,4 +4,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse('here will be articles')
+    # return HttpResponse('here will be articles')
+    words = ['one', 'two', 'free', 'for']
+    return render(
+        request,
+        'article_index.html',
+        context={'words': words},
+    )
