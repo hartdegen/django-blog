@@ -1,1 +1,2 @@
-# django-blog
+make install
+make start
