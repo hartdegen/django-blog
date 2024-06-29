@@ -20,7 +20,9 @@ from django_blog import views
 # from django_blog.views import IndexView
 
 urlpatterns = [
-    path('', views.IndexView.as_view(), name='index'),
+    path('', views.home, name='home'),
+    path('', include('django_blog.article.urls')),
+    # path('', views.IndexView.as_view(), name='index'),
     path('about/', views.about),
     path('articles/', include('django_blog.article.urls')),
     path('admin/', admin.site.urls),
